@@ -13,5 +13,10 @@ namespace _46083zkn
         {
 
         }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }
