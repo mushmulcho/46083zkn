@@ -1,0 +1,80 @@
+.card {
+  border: none;
+}
+.card-img {
+  border-radius: 0;
+}
+.container {
+    background: #f7f7f7;
+    border: solid #e1e1e1;
+    border-width: 0 1px 1px 1px;
+    padding: 20px;
+}
+.card-group {
+    display: table-cell;
+    background: #f7f7f7;
+}
+.card {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: wrap;
+    background-color: none;
+    border-bottom: 2px dotted black;
+}
+  .card-img-body {
+    flex: 0.4;
+    overflow: hidden;
+    position: relative;
+  }
+
+.card-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+  .card-body {
+    flex: 2;
+    padding: 0 0 0 1.25rem;
+  }
+.card-title {
+    color: #5d245a;
+}
+.logo {
+    background: url(https://www.mastersofwine.org/graphics/2013/sprite.png) no-repeat;
+    background-position: 0 0;
+    float: left;
+    height: 80px;
+    width: 200px;
+    color: #5d245a;
+}
+
+.headingLinks {
+    width: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 2px solid black;
+}
+
+.smallLinks {
+    margin-right: 20px;
+}
+
+li {
+    background-color: #5d245a;
+    padding: 5px 5px 5px 5px;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+.backgroundImg {
+    position: absolute;
+    z-index: -100;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
