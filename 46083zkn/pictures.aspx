@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Pictures</title>
     <style type="text/css">
         .card {
           border: none;
@@ -49,17 +49,17 @@
     <script charset="utf-8" src="Scripts/popper.min.js" ></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <form id="form1" runat="server">
-                <table style="width:100%;">
+      <table style="width:100%;">
             <tr style="width:100%; height:20px;background-color: #5d245a;">
                 <td colspan="3">
                      <div class="wrapperHome">
                          <div class="rightHome">
                              <div class="topLogin">
-                                 <div class="topDiv payment">
-                                     <a href="#">Payment</a>
+                                 <div class="topDiv signUp">
+                                    <a href="signUp.aspx">Sign Up</a>
                                  </div>
                                   <div class="topDiv login">
-                                     <a href="#">Login</a>
+                                      <a href="login.aspx">Login</a>
                                  </div>
                              </div>
                              
@@ -97,42 +97,42 @@
             <tr style="width:100%;height:40px;background-color:#5d245a;">
                 <td colspan="3">
                     <div class="wrapperHome">
-                        <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" BorderStyle="None">
+                         <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" BorderStyle="None">
                             <Items>
                                 <asp:MenuItem Text="About us" Value="About us">
-                                    <asp:MenuItem Text="Code of Conduct" Value="Code of Conduct"></asp:MenuItem>
-                                    <asp:MenuItem Text="History of the MW" Value="History of the MW"></asp:MenuItem>
-                                    <asp:MenuItem Text="Contact us" Value="Contact us"></asp:MenuItem>
+                                    <asp:MenuItem Text="Code of Conduct" Value="Code of Conduct" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="History of the MW" Value="History of the MW" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Contact us" Value="Contact us" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Find an MW" Value="Find an MW">
-                                    <asp:MenuItem Text="Search Alphabetically" Value="Search Alphabetically"></asp:MenuItem>
-                                    <asp:MenuItem Text="Browse by Region" Value="Browse by Region"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search Alphabetically" Value="Search Alphabetically" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Browse by Region" Value="Browse by Region" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Become an MW" Value="Become an MW">
-                                    <asp:MenuItem Text="Apply" Value="Apply"></asp:MenuItem>
-                                    <asp:MenuItem Text="Fees" Value="Fees"></asp:MenuItem>
-                                    <asp:MenuItem Text="Who can Apply?" Value="Who can Apply?"></asp:MenuItem>
+                                    <asp:MenuItem Text="Apply" Value="Apply" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Fees" Value="Fees" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Who can Apply?" Value="Who can Apply?" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                     <asp:MenuItem Text="The MW Journey" Value="The MW Journey">
-                                        <asp:MenuItem Text="Stage 1" Value="Stage 1"></asp:MenuItem>
-                                        <asp:MenuItem Text="Stage 2" Value="Stage 2"></asp:MenuItem>
-                                        <asp:MenuItem Text="Stage 3" Value="Stage 3"></asp:MenuItem>
+                                        <asp:MenuItem Text="Stage 1" Value="Stage 1" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Stage 2" Value="Stage 2" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Stage 3" Value="Stage 3" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                     </asp:MenuItem>
                                 </asp:MenuItem>
-                                <asp:MenuItem Text="Research papers" Value="Research papers"></asp:MenuItem>
+                                <asp:MenuItem Text="Research papers" Value="Research papers" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Pictures" Value="Pictures" NavigateUrl="~/pictures.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="News" Value="News">
-                                    <asp:MenuItem Text="Newsletters" Value="Newsletters"></asp:MenuItem>
-                                    <asp:MenuItem Text="Media enquiries" Value="Media enquiries"></asp:MenuItem>
+                                    <asp:MenuItem Text="Newsletters" Value="Newsletters" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Media enquiries" Value="Media enquiries" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Events" Value="Events">
-                                    <asp:MenuItem Text="MW Events" Value="MW Events"></asp:MenuItem>
-                                    <asp:MenuItem Text="MW Trips" Value="MW Trips"></asp:MenuItem>
-                                    <asp:MenuItem Text="Symposium 2018" Value="Symposium 2018"></asp:MenuItem>
+                                    <asp:MenuItem Text="MW Events" Value="MW Events" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="MW Trips" Value="MW Trips" NavigateUrl="~/construction.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Symposium 2018" Value="Symposium 2018" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Our Supporters" Value="Our Supporters">
-                                    <asp:MenuItem Text="Academic and research associates" Value="Academic and research associates"></asp:MenuItem>
+                                    <asp:MenuItem Text="Academic and research associates" Value="Academic and research associates" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                     <asp:MenuItem Text="Principal Supporters" Value="Principal Supporters">
-                                        <asp:MenuItem Text="Austrian Marketing Wine Board" Value="Austrian Marketing Wine Board"></asp:MenuItem>
+                                        <asp:MenuItem Text="Austrian Marketing Wine Board" Value="Austrian Marketing Wine Board" NavigateUrl="~/construction.aspx"></asp:MenuItem>
                                     </asp:MenuItem>
                                 </asp:MenuItem>
                             </Items>

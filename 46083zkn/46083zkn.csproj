@@ -100,6 +100,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="pictures.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="signUp.aspx" />
+    <Content Include="construction.aspx" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -134,6 +137,27 @@
     </Compile>
     <Compile Include="pictures.aspx.designer.cs">
       <DependentUpon>pictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signUp.aspx.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signUp.aspx.designer.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="construction.aspx.cs">
+      <DependentUpon>construction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="construction.aspx.designer.cs">
+      <DependentUpon>construction.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
