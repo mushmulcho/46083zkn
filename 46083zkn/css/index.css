@@ -115,3 +115,22 @@ img {
     display: inline-flex;
     float: right;
 }
+.wrapperHome {
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+
+.leftHome {
+    margin-right: 2%;
+    width: 58%;
+    float: left;
+}
+
+.rightHome {
+    width: 40%;
+    float: right;
+}
+.wrappedDiv {
+    margin: 10px 10px 10px 10px;
+}

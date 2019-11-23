@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="_46083zkn.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pictures.aspx.cs" Inherits="_46083zkn.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -6,40 +6,50 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .card{
-            background-color: #f7f7f7;
-            margin:5px 5px 5px 5px;
+        .card {
+          border: none;
         }
-        .wrappedDiv{
-            margin:10px 10px 10px 10px;
+        img,
+        .card-img-top {
+          border-radius: 0em;
         }
-        .wrapperHome{
-            margin: 0 auto;
-            position: relative;
-            width: 980px;
+
+        @media (min-width: 576px) {
+          .card-columns {
+            column-count: 2;
+          }
         }
-        .leftHome{
-            margin-right: 2%;
-            width: 58%;
-            float:left;
+
+        @media (min-width: 768px) {
+          .card-columns {
+            column-count: 3;
+          }
         }
-        .rightHome{
-            width:40%;
-            float: right;
+
+        @media (min-width: 992px) {
+          .card-columns {
+            column-count: 4;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .card-columns {
+            column-count: 5;
+          }
         }
     </style>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
-      <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     
+
 </head>
 <body>
     <script  src="Scripts/jquery-3.0.0.min.js"></script>
     <script charset="utf-8" src="Scripts/popper.min.js" ></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <form id="form1" runat="server" style="width:100%;height:100%;">
-        <table style="width:100%;">
+    <form id="form1" runat="server">
+                <table style="width:100%;">
             <tr style="width:100%; height:20px;background-color: #5d245a;">
                 <td colspan="3">
                      <div class="wrapperHome">
@@ -61,7 +71,7 @@
                 <td colspan="3" style="width:500px;height:40px;text-align:right">
                     <div class="wrapperHome">
                         <div class="leftHome">
-                            <div class="logo" ></div>
+                            <a href="home.aspx"><div class="logo" ></div></a>
                         </div>
                         <div class="rightHome">
                             <asp:HyperLink ID="HyperLink1" runat="server" CssClass="headingLinks">Members</asp:HyperLink>
@@ -79,7 +89,7 @@
                             <asp:HyperLink ID="HyperLink5" runat="server" CssClass="smallLinks" NavigateUrl="http://twitter.com/home?status=Home+https://www.mastersofwine.org/index.cfm"><img alt="tweet" src="https://www.mastersofwine.org/objects_store/ico_tweet.png" /></asp:HyperLink>
                             <asp:HyperLink ID="HyperLink6" runat="server" CssClass="smallLinks" NavigateUrl="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.mastersofwine.org/index.cfm&amp;title=Home&amp;source=[SOURCE/DOMAIN]"><img alt="linkedin" src="https://www.mastersofwine.org/objects_store/ico_linkedin.png" /></asp:HyperLink>
                             <input id="Text1" type="text" />
-                            <button type="submit" CssClass="purple" class="alert-info"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="purple"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </td>
@@ -109,7 +119,7 @@
                                     </asp:MenuItem>
                                 </asp:MenuItem>
                                 <asp:MenuItem Text="Research papers" Value="Research papers"></asp:MenuItem>
-                                <asp:MenuItem Text="Calendar" Value="Calendar"></asp:MenuItem>
+                                <asp:MenuItem Text="Pictures" Value="Pictures" NavigateUrl="~/pictures.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="News" Value="News">
                                     <asp:MenuItem Text="Newsletters" Value="Newsletters"></asp:MenuItem>
                                     <asp:MenuItem Text="Media enquiries" Value="Media enquiries"></asp:MenuItem>
@@ -133,85 +143,37 @@
             </tr>
             <tr style="width:100%;height: 400px;">
                 <td colspan="3" style="position:relative;text-align:center;">
-                    <div style="display:inline-flex;padding-top: 50px;">
-                        <div class="wrappedDiv"><img src="https://www.mastersofwine.org/objects_store/homepage_banner/thumbnail/68CFF752985BA5EE1256E303D9B1C31C.jpg" /></div>
-                        <div class="wrappedDiv"><img src="https://www.mastersofwine.org/objects_store/homepage_banner/thumbnail/F3C87AE7113374A80F838442DC76D37F.jpg" /></div>
-                        <div class="wrappedImgBackground">
-                            <img CssClass="backgroundImg" src="https://www.mastersofwine.org/graphics/2013/slideshow-bg.jpg" class="backgroundImg" />
+                    <div style="display:inline-flex;width: 980px;">
+                        <div class="container">
+                          <div class="card-columns">
+                            <div class="card "> <img class="card-img-top" src="	https://www.kendall.edu/wp-content/uploads/2019/07/wine-professional-course-2.jpg	" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www.lavernewines.co.za/wp-content/uploads/2018/12/Robertson_Natural_Sweet_Red.png	" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://img.grouponcdn.com/deal/4HWhsEsrqesecw45svpFxwpBhRh7/4H-1808x1085/v1/c700x420.jpg	" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-champ-index-1119-1574195843.jpg?crop=0.503xw:1.00xh;0.247xw,0&resize=640:*	" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://products0.imgix.drizly.com/ci-oyster-bay-sauvignon-blanc-12a27756f240182c.jpeg?auto=format%2Ccompress&dpr=2&fm=jpeg&h=240&q=20	" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	http://cdn.shopify.com/s/files/1/0069/2859/7028/collections/IMG_6503_3_1200x630.jpg?v=1565768610" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/E/d/Edward-s-Classic-Rose-Wine---0-75l-7211127_4.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://img.grouponcdn.com/deal/2hqF4zf23Tcj5jZjkX7Q/TQ-700x420/v1/c700x420.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://savagevines.co.uk/wp-content/uploads/2018/02/photo-taste3.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://11pt5z46nuudt9qxx2knwgff-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/QuikVin-759x500.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www.htfwines.co.uk/media/wysiwyg/images/mobile.png" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://images.wine.co.za/GetWineImage.ashx?ImageSize=large&IMAGEID=258752" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://mywinecanada.com/media/resized/489x/ves_vendors/vendors/r/e/redroosterwine.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www.rietvallei.co.za/images/media/108.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://d207gb2bfvg73.cloudfront.net/05181450/pour.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	http://newstruths.in/wp-content/uploads/2019/07/Wine-Cellars-market.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://st.hzcdn.com/simgs/86c1651b075adfd2_4-9428/home-design.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www.customwinecellarsaustin.com/wp-content/uploads/2019/07/Sommelier-Select-Series-Genuwine-Cellars.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://www.totalprestigemagazine.com/wp-content/uploads/2017/10/wine-cellar.jpg" alt="Card image cap"> </div>
+                            <div class="card "> <img class="card-img-top" src="	https://dbijapkm3o6fj.cloudfront.net/resources/2344,1004,1,6,4,0,600,450/-4601-/20181224174304/burgundy-wine-cellar.jpeg" alt="Card image cap"> </div>
+
+                          </div>
                         </div>
-                    </div>
+                        </div>
                 </td>
             </tr>
-            <tr style="width:100%;height:20px;">
-                <td colspan="3">
-                    <div class="wrapperHome">
-                        <div class="leftHome">
-                            <div class="container">
-                              <div class="card-group vgr-cards">
-                                <div class="card">
-                                  <div class="card-img-body">
-                                  <img class="card-img" src="https://www.mastersofwine.org/objects_store/thumbnail/2FE9E5F40A6AA08897FE992E64CA677B.jpg" alt="Card image cap">
-                                  </div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Grupo Rioja joins the Institute of Masters of Wine as a supporter</h5>
-                                    <p class="card-text">20 November 2019</br>
-        The Institute of Masters of Wine has welcomed Grupo Rioja to its family of international supporters.</p>
-                                  </div>
-                                </div>
-                                <div class="card">
-                                  <div class="card-img-body">
-                                    <img class="card-img" src="https://www.mastersofwine.org/objects_store/thumbnail/E7D55BAF2539DA33C4149EA5947D84D1.jpg" alt="Card image cap"></div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Edward Ragg MW wins the 2019 Noval Award</h5>
-                                    <p class="card-text">12 November 2019</br>
-        Edward Ragg MW has won the prestigious Quinta do Noval Award 2019 for the best research paper at the recent Institute of Masters of Wine annual awards ceremony.</p>
-                                  </div>
-                                </div>
-                                  <div class="card">
-                                  <div class="card-img-body">
-                                    <img class="card-img" src="https://www.mastersofwine.org/objects_store/thumbnail/41017DA90475D5FA668921CDEFB3481B.jpg" alt="Card image cap"></div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">The Madame Bollinger Foundation awards the 2019 Madame Bollinger Medal to Christine Marsiglio MW</h5>
-                                    <p class="card-text">6 November 2019</br>
-        The Madame Bollinger Foundation last night awarded the Bollinger Medal for excellence in tasting and outstanding achievement in the Institute of Masters of Wine practical examinations to Christine Marsiglio MW.</p>
-                                  </div>
-                                </div>
-                                  <div class="card">
-                                  <div class="card-img-body">
-                                    <img class="card-img" src="https://www.mastersofwine.org/objects_store/thumbnail/E6A8CA133D04BB0F45B062A7B339B1AC.jpg" alt="Card image cap"></div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Fourteen Masters of Wine inducted at the IMW annual awards ceremony</h5>
-                                    <p class="card-text">5 November 2019</br>
-        The Institute of Masters of Wine has officially welcomed 14 new Masters of Wine to its membership at the IMWs annual awards ceremony.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="rightHome">
-                            <div class="container">
-                                 <h3>Facts and figures</h3>
-                                <p>What is the IMW? What is a Master of Wine? How many MWs are there? Take a look at our FAQs to find out who we are and what we do.</p>
-                                <p>&nbsp;</p>
-                                <h3>Research paper</h3>
-                                <p>See the topics MWs researched for the final part of the MW examination.</p>
-                                <p>&nbsp;</p>
-                                <h3>Become a Master of Wine</h3>
-                                <p><img alt="Caroline Hermann MW and Adrian Garforth MW" width="330" height="258" src="https://www.mastersofwine.org/filemanager/root/site_assets/images/homepage/Caroline_Adrian_Website_Homepage.png">&nbsp;</p>
-                                <h3>Events and trips blog</h3>
-                                <p>From Hong Kong to San Francisco, from Chile to Bordeaux, MWs report on our recent events and trips.</p>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    
-                   
-                </td>
-            </tr>
+           
         </table>
-        <div>
-            working again  
-        </div>
     </form>
 </body>
 </html>
